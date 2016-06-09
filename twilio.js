@@ -5,6 +5,7 @@ var twilio = require('twilio');
 var client = twilio(ACCOUNT_SID, AUTH_TOKEN);
 var express = require('express');
 var app = express();
+var twiml = new twilio.TwimlResponse();
 
 const alone =
 `Dear Friend,
@@ -32,6 +33,19 @@ client.sendMessage({
 
 app.get('/hello', function (req, res) {
   res.send('Hello World!');
+});
+
+app.post('/piper', function(req, res) {
+  console.log('post piper');
+  // client.sendMessage({
+//   to: '+14153475539',
+//   from: '+17185579380',
+//   body: alone
+// }
+
+  // this stuff...
+//   var twiml = new twilio.TwimlResponse();
+//   twiml.message('response');
 });
 
 app.listen(3000, function () {

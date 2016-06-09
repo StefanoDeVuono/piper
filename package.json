@@ -9,6 +9,7 @@
   "author": "Stefano De Vuono <io@stefanodevuono.com> (http://stefanodevuono.com)",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "^1.15.1",
     "express": "^4.13.4",
     "twilio": "^2.9.1"
   }
