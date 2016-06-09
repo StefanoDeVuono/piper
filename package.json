@@ -2,9 +2,10 @@
   "name": "piper",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "twilio.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node twilio.js"
   },
   "author": "Stefano De Vuono <io@stefanodevuono.com> (http://stefanodevuono.com)",
   "license": "ISC",
